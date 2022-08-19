@@ -28,13 +28,14 @@ collections:
               label: Site URL,
               name: url,
               widget: string,
-              # pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
+              pattern: ['^(http|https)://', 'Must start with http or https'],
             }
           - {
               label: Email,
               name: email,
               widget: string,
               hint: 'Company email address',
+              pattern: ['[a-z0-9]+@[a-z]+\.[a-z]{2,3}', 'Email must be valid']
             }
           - {
               label: Home page posts size,
@@ -48,7 +49,7 @@ collections:
     label_singular: 'Blog'
     folder: "content/blogs" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # {{year}}-{{month}}-{{day}}-{{slug}} Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
