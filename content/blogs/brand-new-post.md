@@ -17,6 +17,8 @@ dat: voce quater attritas. Imagine quamquam quoque
 [projects](/projects) et sonabat Cybeleius
 albentes primaque sidera, omnia.
 
+![](/images/dust.jpg)
+
 ## Apud sunt
 
 Addidit nunc: finita tua celatos vacuos Morpheus tigridis videre. Et an in ne
@@ -25,7 +27,7 @@ fuit ulla Thestorides. Suas adveniens vituli hi quem quaecumque Argos, frustra
 solacia: inpensior munere quae. Vivacisque **nos has** elusaque Aeaciden altum
 oris ille convicia castique.
 
-```js{1,4}[posts.vue]
+```js{1,4}\[posts.vue]
 formatDate(dateString) {
   const date = new Date(dateString)
   return date.toLocaleDateString(process.env.lang) || ''
