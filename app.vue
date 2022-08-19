@@ -5,6 +5,7 @@
 		},
 	})
 
+
 </script>
 
 
@@ -14,12 +15,12 @@
 			<!-- <Link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> -->
 			<Link
 				rel="preload"
-				href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css"
+				href="https://unpkg.com/simpledotcss/simple.min.css"
 				as="style"
 			/>
 			<Link
 				rel="stylesheet"
-				href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css"
+				href="https://unpkg.com/simpledotcss/simple.min.css"
 			/>
 
 

@@ -4,15 +4,26 @@ definePageMeta({
 })
 </script> -->
 
-<script>
-export default {
-  head() {
-    return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-    };
-  },
-};
+<script setup>
+import site from "../data/site.json"
+
+	useHead({
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
+	})
+
+
+
+// export default {
+//   head() {
+//     return {
+//       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+//     };
+//   },
+// };
+
 </script>
+
+
 
 <template>
 <main>
@@ -27,7 +38,8 @@ export default {
 
      
       <!-- <posts post-type="blog" :amount="1" /> -->
-      <post :amount="2" />
+      <post :amount="site.homePostsSize" />
+
     </section>
   </NuxtLayout>
   </main>

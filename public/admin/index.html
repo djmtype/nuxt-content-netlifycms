@@ -9,6 +9,9 @@
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  <script>CMS.registerPreviewStyle("/admin/admin.css");</script>
+  <script>
+  CMS.registerPreviewStyle("/admin/admin.css");
+  CMS.registerPreviewStyle("https://unpkg.com/simpledotcss/simple.min.css");
+  </script>
 </body>
 </html>
