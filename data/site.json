@@ -1,7 +1,7 @@
 {
-	"name": "Astro Xenon",
-	"description": "Music. Code. Tech.",
-	"url": "https://astro-xenon.netlify.app",
-	"email": "mailto:xenon@mtype.com",
-	"homePostsSize": 6
+  "name": "Nuxt Content CMS",
+  "description": "Docs and Blog and Stuff",
+  "url": "https://nuxt-content-cms.netlify.app",
+  "email": "someone@nuxt-content-cms.netlify.app",
+  "homePostsSize": 6
 }
