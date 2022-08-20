@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1>Custom Blog Layout. Very Nice</h1>
-    <hr/>
+  <main>
     <slot />
-  </div>
+  </main>
 </template>

@@ -11,36 +11,23 @@ import site from "../data/site.json"
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
 	})
 
-
-
-// export default {
-//   head() {
-//     return {
-//       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-//     };
-//   },
-// };
-
 </script>
 
 
 
 <template>
-<main>
   <NuxtLayout>
-    <section class="self-center flex flex-col flex-1 items-center justify-center">
-      <h1 class="title text-center">Nuxt — Tailwind — Netlify CMS</h1>
-      <h2 class="subtitle text-center">Boilerplate</h2>
+    <Title>Welcome Home</Title>
+    <section>
+      <h1>Nuxt / Netlify CMS <br /><small><em>Boilerplate</em></small></h1>
+
     </section>
 
-    <section class="mt-8">
-      <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Latest blog post</h3>
-
-     
-      <!-- <posts post-type="blog" :amount="1" /> -->
-      <post :amount="site.homePostsSize" />
+    <section>
+      <h2>Latest Posts</h2>
+      <p>Control the posts amount via <code>data/site.json "postAmount"</code></p>
+      <PostList :amount="site.postAmount || 5" />
 
     </section>
   </NuxtLayout>
-  </main>
 </template>

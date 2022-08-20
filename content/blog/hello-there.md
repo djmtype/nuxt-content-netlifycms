@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 date: 2021-03-01
 title: How to edit the content
 description: And what to expect when running a repo-based CMS

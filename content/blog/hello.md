@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Hello
 date: 2022-08-19
 description: This is an official hello

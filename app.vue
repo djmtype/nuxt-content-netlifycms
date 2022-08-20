@@ -1,7 +1,7 @@
 <script setup>
 	useHead({
 		titleTemplate: (titleChunk) => {
-			return titleChunk ? `${titleChunk} / Mighty Docs Wiki` : "Mighty Docs Wiki"
+			return titleChunk ? `${titleChunk} / Nuxt Content Boilerplate` : "Nuxt Content Boilerplate"
 		},
 	})
 
@@ -15,12 +15,12 @@
 			<!-- <Link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> -->
 			<Link
 				rel="preload"
-				href="https://unpkg.com/simpledotcss/simple.min.css"
+				href="https://cdn.simplecss.org/simple.min.css"
 				as="style"
 			/>
 			<Link
 				rel="stylesheet"
-				href="https://unpkg.com/simpledotcss/simple.min.css"
+				href="https://cdn.simplecss.org/simple.min.css"
 			/>
 
 
@@ -38,7 +38,9 @@
 			<Link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" /> -->
 		</Head>
 		<Body>
+			<TheHeader />
 				<NuxtPage />
+			<TheFooter />
 		</Body>
 	</Html>
 </template>

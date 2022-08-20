@@ -3,5 +3,5 @@
   "description": "Docs and Blog and Stuff",
   "url": "https://nuxt-content-cms.netlify.app",
   "email": "someone@nuxt-content-cms.netlify.app",
-  "homePostsSize": 6
+  "postAmount": 3
 }

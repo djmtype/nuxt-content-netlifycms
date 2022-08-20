@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: Brand New Post
 date: 2022-08-19
 description: This deserves focus.
@@ -11,13 +11,7 @@ Lorem markdownum viros voce nostri tumulandus contegat tua **prior** umbra
 detinet moenia horrendus viri. Amo tophis Idaeis [blog](/blog)
 venerat.
 
-Sic **nostrae habet**: este, sua illic auctor causam. Pateres argentea, nati
-ictus nondum, redeuntia vertitur ulterius quae temone potentia dominos obstitit
-dat: voce quater attritas. Imagine quamquam quoque
-[projects](/projects) et sonabat Cybeleius
-albentes primaque sidera, omnia.
-
-![](/images/dust.jpg)
+![Spectacular photo of dust](/images/dust.jpg)
 
 ## Apud sunt
 

@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <p>Default Layout</p>
-    <hr/>
+  <main>
     <slot />
-  </div>
+  </main>
 </template>
