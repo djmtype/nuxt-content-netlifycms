@@ -20,7 +20,7 @@ collections:
       - {label: "Head Title", name: "head.title", widget: "string", required: false}
       - {label: "Navigation Title", name: "navigation.title", widget: "string", required: false}
       - {label: "Head Description", name: "head.description", widget: "string", required: false}
-      - {label: "Filename", name: "filename", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Layout", name: "layout", widget: "string", default: "default"}
       - {label: "Body", name: "body", widget: "markdown"}
   - label: 'Site settings'
