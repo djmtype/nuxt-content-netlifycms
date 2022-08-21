@@ -18,8 +18,9 @@ collections:
       - {label: "Head Title", name: "head.title", widget: "string"}
       - {label: "Navigation Title", name: "navigation.title", widget: "string"}
       - {label: "Head Description", name: "head.description", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Filename", name: "filename", widget: "string"}
       - {label: "Layout", name: "layout", widget: "string", default: "default"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - label: 'Site settings'
     name: 'site'
     files:
