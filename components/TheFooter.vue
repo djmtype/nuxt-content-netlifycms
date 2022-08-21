@@ -1,10 +1,8 @@
 <template>
 	<footer>
-<!-- {{ route.meta.layout }} Layout -->
+		Footer
+
 	</footer>
 </template>
 
-<script setup>
-// const route = useRoute()
-</script>
 

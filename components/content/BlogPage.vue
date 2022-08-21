@@ -8,8 +8,6 @@ definePageMeta({
 </script>
 
 <template>
-    <NuxtLayout>
-      <Title>The Blog</Title>
     <h1>The Blog</h1>
     <section>
       <pre>{{ data }}</pre>
@@ -17,7 +15,6 @@ definePageMeta({
     <section v-if="data">
       <TheBlog />
     </section>
-</NuxtLayout>
 </template>
 
 

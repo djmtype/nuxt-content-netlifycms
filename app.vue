@@ -3,8 +3,15 @@
 		titleTemplate: (titleChunk) => {
 			return titleChunk ? `${titleChunk} / Nuxt Content Boilerplate` : "Nuxt Content Boilerplate"
 		},
+		// script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
 	})
 
+
+
+
+const { data: navigation } = await useAsyncData('navigation', () => {
+  return fetchContentNavigation()
+})
 
 </script>
 
@@ -39,7 +46,11 @@
 		</Head>
 		<Body>
 			<TheHeader />
+			<nav>
+        <TheNavigation :navigation-tree="navigation" />
+      </nav>
 				<NuxtPage />
+				
 			<TheFooter />
 		</Body>
 	</Html>
