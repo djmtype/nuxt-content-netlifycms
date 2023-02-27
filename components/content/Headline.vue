@@ -1,6 +1,6 @@
 <template>
 	<component :is="headline"
-		>Foobar</component
+		><slot /></component
 	>
 </template>
 <!-- <script>
@@ -19,9 +19,9 @@
 import { computed } from 'vue'
 
 const props = defineProps({
-		headlineLevel: Number
+		level: Number
 })
 const headline = computed(() => {
-  return "h" + props.headlineLevel
+  return "h" + props.level
 })
 </script>

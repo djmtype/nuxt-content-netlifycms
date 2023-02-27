@@ -3,11 +3,12 @@
 		titleTemplate: (titleChunk) => {
 			return titleChunk ? `${titleChunk} / Nuxt Content Boilerplate` : "Nuxt Content Boilerplate"
 		},
+		 
 		// script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
-	})
+	});
 
 
-
+// import "~/assets/styles/main.css";
 
 const { data: navigation } = await useAsyncData('navigation', () => {
   return fetchContentNavigation()
@@ -20,20 +21,25 @@ const { data: navigation } = await useAsyncData('navigation', () => {
 	<Html lang="en" dir="ltr">
 		<Head>
 			<!-- <Link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> -->
-			<Link
+		<Link
 				rel="preload"
 				href="https://cdn.simplecss.org/simple.min.css"
 				as="style"
 			/>
-			<Link
+				<Link
 				rel="stylesheet"
-				href="https://cdn.simplecss.org/simple.min.css"
-			/>
+				href="https://cdn.simplecss.org/simple.min.css" media="screen"
+			/> 
+
+			<!-- <Link
+				rel="stylesheet"
+				href="/assets/styles/main.css" media="screen"
+			/> -->
 
 
 			<!-- <Link
 				rel="stylesheet"
-				href="/assets/styles/main.css"
+				href="assets/styles/main.css"
 			/> -->
 
 			<!-- <Link
